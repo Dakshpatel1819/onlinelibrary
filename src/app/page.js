@@ -1,27 +1,37 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Home = () => {
-    return (
-        <div className="home-container">
-            <header className="home-header">
-                <h1>Welcome to the Online Book Library</h1>
-                <p className="home-subtitle">
-                    Explore a vast collection of books from various genres and authors.
-                </p>
-            </header>
-            <section className="home-about">
-                <h2>About Our Library</h2>
-                <p>
-                    Our online library provides access to a wide range of literary works,
-                    from classic novels to contemporary bestsellers. We aim to make
-                    reading accessible and enjoyable for everyone.
-                </p>
-                <p>
-                    Discover new authors, revisit your favorite books, and immerse
-                    yourself in the world of literature.
-                </p>
-            </section>
-            <section className="home-features">
+  return (
+    <div className="home-container">
+      <header className="home-header">
+        <h1>Welcome to the Online Library</h1>
+        <p className="home-subtitle">
+          Explore a world of captivating stories.
+        </p>
+      </header>
+      <section className="featured-books">
+        <h2>Featured Books</h2>
+        <div className="book-grid">
+          <div className="book-item">
+            <Link href="/books/1">
+              <img src="https://th.bing.com/th/id/OIP.30k4y_ycLJqGr9GHzg2-kwHaLG?rs=1&pid=ImgDetMain" alt="Harry Potter" />
+              <h3>Harry Potter</h3>
+            </Link>
+          </div>
+          <div className="book-item">
+            <Link href="/books/2">
+              <img src="https://th.bing.com/th/id/OIP.r0CMJ08tBkYGqDgYI_94-QHaLH?rs=1&pid=ImgDetMain" alt="Pirates of the Caribbean" />
+              <h3>Pirates of the Caribbean</h3>
+            </Link>
+          </div>
+        </div>
+      </section>
+      <section className="call-to-action">
+        <p>
+          Dive into adventure! Browse our collection.
+        </p>
+        <section className="home-features">
                 <h2>Key Features</h2>
                 <ul>
                     <li>Extensive Book Catalog</li>
@@ -30,11 +40,12 @@ const Home = () => {
                     <li>Personalized Recommendations (Future)</li>
                 </ul>
             </section>
-            <footer className="home-footer">
-                <p>&copy; 2024 Online Book Library. All rights reserved.</p>
-            </footer>
-        </div>
-    );
+        <Link href="/books" className="browse-button">
+          Browse All
+        </Link>
+      </section>
+    </div>
+  );
 };
 
 export default Home;

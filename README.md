@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Phase 2 - Library Project: Getting the Look and Around
 
-## Getting Started
+Hey! This part of the project was all about making the library website look good and letting you click around.
 
-First, run the development server:
+**What's Done:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Moving Between Pages:** You can now click links to go to the homepage, see all the books, and check out details for each book.
+* **Basic Layout:** The pages have a basic structure with a header, main content, and a footer.
+* **Some Style:** It's not super fancy yet, but there's some styling to make it easier to look at (colors, spacing).
+* **Book List Display:** You can see a list of books on the "Books" page.
+* **Book Details:** When you click a book, you get a page with more info (just basic stuff for now).
+* **(Kind of) Ready for Real Data:** We've set things up so it *could* grab real book info from somewhere later. For now, it's just using fake book data.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**How to See It:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1.  Make sure you have the stuff to run it (Node.js and npm).
+2.  Open the project in your computer's terminal.
+3.  Type `npm install` to get everything it needs.
+4.  Then type `npm run dev` to start it up.
+5.  Open a web browser and go to `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**What's Next:**
 
-## Learn More
+Phase 3 will be about making it actually *do* things, like letting you borrow or reserve books using real data!
 
-To learn more about Next.js, take a look at the following resources:
+**Where to Find This Code:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Check out the code here: https://github.com/Dakshpatel1819/onlinelibrary/tree/Phase2
+* This specific part is probably on a branch called: Phase2
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

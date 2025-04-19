@@ -3,13 +3,17 @@ import Link from 'next/link';
 
 const BookList = ({ books }) => {
   return (
-    <ul>
-      {books.map((book) => (
-        <li key={book.id}>
-          <Link href={`/books/${book.id}`}>{book.title}</Link>
-        </li>
+    <div className="book-list">
+      {books.map(book => (
+        <div key={book.id} className="book-item">
+          <Link href={`/books/${book.id}`}>
+            <img src={book.coverImage} alt={book.title} />
+            <h3>{book.title}</h3>
+            <p className="author">by {book.author}</p>
+          </Link>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 
