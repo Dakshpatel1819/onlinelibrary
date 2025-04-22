@@ -1,16 +1,25 @@
-import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-const BookDetails = ({ book }) => {
-  if (!book) {
-    return <p>No book details available.</p>;
-  }
+export default function BookDetails({ book }) {
   return (
-    <div>
-      <h2>{book.title}</h2>
-      <p>Author: {book.author}</p>
-      <p>Description: {book.description}</p>
+    <div className="book-details">
+      <Link href={`/books/${book.id}`} aria-label={`View details for ${book.title}`}>
+        <Image
+          src={book.coverImage}
+          alt={book.title}
+          width={300}
+          height={450}
+          style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+          placeholder="blur"
+          blurDataURL="/no-cover.png"
+        />
+      </Link>
+      <div className="book-info">
+        <h3>{book.title}</h3>
+        <p><strong>Author:</strong> {book.author}</p>
+        <p>{book.description}</p>
+      </div>
     </div>
   );
-};
-
-export default BookDetails;
+}

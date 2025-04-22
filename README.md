@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Online Book Library
+A Next.js application for browsing and searching public domain books using the Gutendex API.
+Features
 
-## Getting Started
+View featured books on the homepage.
+Search books by keyword with pagination.
+View detailed book information (title, author, cover image, description).
+Responsive design for mobile and desktop.
+Accessible with ARIA attributes and keyboard navigation.
+Optimized with code splitting, lazy loading, and efficient API calls.
 
-First, run the development server:
+Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Frontend: Next.js (App Router), React
+API: Gutendex API
+Styling: Vanilla CSS
+Version Control: Git, GitHub
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Clone the repository:git clone https://github.com/your-username/online-book-library.git
+cd online-book-library
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+Install dependencies:npm install
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Run the development server:npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Open http://localhost:3000 in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Team
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Alice Smith: API integration and error handling
+Bob Johnson: Frontend components and dynamic imports
+Carol Lee: Responsive design and accessibility
+Dave Wilson: Presentation and demo preparation
+
+License
+MIT License

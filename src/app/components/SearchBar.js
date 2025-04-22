@@ -1,29 +1,35 @@
 'use client';
 
-import React, { useState } from 'react';
+import { useState, useMemo } from 'react';
+import debounce from 'lodash.debounce';
 
 const SearchBar = ({ onSearch }) => {
   const [term, setTerm] = useState('');
 
-  const handleChange = (e) => {
-    setTerm(e.target.value);
-  };
+  const debouncedSearch = useMemo(
+    () =>
+      debounce((value) => {
+        onSearch(value);
+      }, 500),
+    [onSearch]
+  );
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    onSearch(term);
+  const handleChange = (e) => {
+    const value = e.target.value;
+    setTerm(value);
+    debouncedSearch(value);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="search-bar">
       <input
         type="text"
+        placeholder="Search books..."
         value={term}
         onChange={handleChange}
-        placeholder="Search books..."
+        aria-label="Search books"
       />
-      <button type="submit">Search</button>
-    </form>
+    </div>
   );
 };
 

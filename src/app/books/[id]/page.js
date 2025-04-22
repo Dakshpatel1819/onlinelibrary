@@ -1,28 +1,55 @@
-'use client'; 
+'use client';
 
-import React from 'react';
-import { useParams } from 'next/navigation';
-import BookDetails from '../../components/BookDetails';
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import * as api from '../../lib/api';
 
-const bookDetailsData = {
-    1: { title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', description: 'A fantasy epic...' },
-    2: { title: 'Pride and Prejudice', author: 'Jane Austen', description: 'A classic romance...' },
-    3: { title: '1984', author: 'George Orwell', description: 'A dystopian novel...' },
-};
+export default function BookDetailsPage({ params }) {
+  const [book, setBook] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-const BookDetailsPage = () => {
-    const { id } = useParams();
-    const book = bookDetailsData[id];
-
-    if (!book) {
-        return <p>Book not found</p>;
+  useEffect(() => {
+    async function fetchBook() {
+      setLoading(true);
+      setError(null);
+      try {
+        const data = await api.getBookById(params.id);
+        if (!data) {
+          throw new Error('Book not found');
+        }
+        setBook(data);
+      } catch (err) {
+        setError('Failed to fetch book details. Please try again.');
+      } finally {
+        setLoading(false);
+      }
     }
+    fetchBook();
+  }, [params.id]);
 
-    return (
-        <div>
-            <BookDetails book={book} />
+  if (loading) return <div className="loading">Loading book details...</div>;
+  if (error) return <div className="error">{error}</div>;
+  if (!book) return <div className="error">Book not found</div>;
+
+  return (
+    <main className="container">
+      <h1>{book.title}</h1>
+      <div className="book-details">
+        <Image
+          src={book.coverImage}
+          alt={book.title}
+          width={300}
+          height={450}
+          style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+          placeholder="blur"
+          blurDataURL="/no-cover.png"
+        />
+        <div className="book-info">
+          <p><strong>Author:</strong> {book.author}</p>
+          <p><strong>Description:</strong> {book.description}</p>
         </div>
-    );
-};
-
-export default BookDetailsPage;
+      </div>
+    </main>
+  );
+}

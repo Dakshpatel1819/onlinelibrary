@@ -1,19 +1,21 @@
-import React from 'react';
 import Link from 'next/link';
 
-const Navbar = () => {
-    return (
-        <nav className="navbar">
-            <ul className="nav-list">
-                <li className="nav-item">
-                    <Link href="/">Home</Link>
-                </li>
-                <li className="nav-item">
-                    <Link href="/books">Books</Link>
-                </li>
-            </ul>
-        </nav>
-    );
-};
-
-export default Navbar;
+export default function Navbar() {
+  return (
+    <nav className="navbar">
+      
+      <ul>
+        <li>
+          <Link href="/" aria-label="Go to homepage">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link href="/books" aria-label="Go to books page">
+            Books
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+}

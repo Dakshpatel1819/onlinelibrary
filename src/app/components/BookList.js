@@ -1,16 +1,21 @@
-import React from 'react';
-import Link from 'next/link';
+import dynamic from 'next/dynamic';
 
-const BookList = ({ books }) => {
+const BookDetails = dynamic(() => import('./BookDetails'), {
+  loading: () => <div className="loading">Loading book...</div>,
+});
+
+export default function BookList({ books }) {
+  if (!books || books.length === 0) {
+    return <p>No books found.</p>;
+  }
+
   return (
-    <ul>
+    <div className="book-list">
       {books.map((book) => (
-        <li key={book.id}>
-          <Link href={`/books/${book.id}`}>{book.title}</Link>
-        </li>
+        book.coverImage && (
+          <BookDetails key={book.id} book={book} />
+        )
       ))}
-    </ul>
+    </div>
   );
-};
-
-export default BookList;
+}
