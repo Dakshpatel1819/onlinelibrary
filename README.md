@@ -42,35 +42,35 @@ Open http://localhost:3000 in your browser to explore the app!
 The project was built in three phases:
 Phase 1: Foundation
 
-Set up project structure and core components (Navbar, BookList, BookItem).
-Implemented basic navigation and state management.
-Challenge: Struggled with Next.js routing.
-Solution: Used next/link after studying tutorials.
+- Set up project structure and core components (Navbar, BookList, BookItem).
+I- mplemented basic navigation and state management.
+- Challenge: Struggled with Next.js routing.
+- Solution: Used next/link after studying tutorials.
 
 
 Deliverables: Basic structure, initial components, and navigation.
 
 Phase 2: Intermediate Functionality and Styling
 
-Added routing for homepage, book details, and search pages.
-Enhanced UI with responsive styling.
-Challenge: Mobile styling inconsistencies.
-Solution: Applied media queries and tested with dev tools.
+- Added routing for homepage, book details, and search pages.
+- Enhanced UI with responsive styling.
+- Challenge: Mobile styling inconsistencies.
+- Solution: Applied media queries and tested with dev tools.
 
 
 Deliverables: Functional routing, modular components, and styled UI.
 
 Phase 3: Finalization and Optimization
 
-Integrated Google Books API and optimized performance (e.g., lazy loading).
-Conducted final testing and prepared for deployment.
-Deliverables: Complete app, presentation materials, and optional deployment.
+- Integrated Google Books API and optimized performance (e.g., lazy loading).
+- Conducted final testing and prepared for deployment.
+- Deliverables: Complete app, presentation materials, and optional deployment.
 
 🧠 What I Learned
 
-Mastered Next.js basics, routing, and component modularity.
-Gained confidence in building responsive, user-friendly interfaces.
-Understood the importance of optimization for smooth performance.
+- Mastered Next.js basics, routing, and component modularity.
+- Gained confidence in building responsive, user-friendly interfaces.
+- Understood the importance of optimization for smooth performance.
 
 🌟 Future Scope
 
