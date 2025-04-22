@@ -5,19 +5,19 @@ Welcome to the Online Library Application, a web-based platform built with Next.
 The Online Library Application is designed to bring the library experience online, solving the challenge of limited physical access to books. With a modular component structure and performance optimizations, it offers a seamless way to discover and learn about books.
 Key Features
 
-🏠 Homepage: Browse a curated list of featured books with cover images, titles, and authors.
-📖 Book Details: View comprehensive book info, including descriptions and more.
-🔍 Search: Find books quickly using keyword-based search.
-🧭 Navigation: Smoothly move between sections with an intuitive navbar.
-🖼️ Responsive Design: Enjoy a consistent experience on desktop and mobile.
+- 🏠 Homepage: Browse a curated list of featured books with cover images, titles, and authors.
+- 📖 Book Details: View comprehensive book info, including descriptions and more.
+- 🔍 Search: Find books quickly using keyword-based search.
+- 🧭 Navigation: Smoothly move between sections with an intuitive navbar.
+- 🖼️ Responsive Design: Enjoy a consistent experience on desktop and mobile.
 
 🛠️ Technologies Used
 
-Next.js: React framework for routing and server-side rendering.
-React: Component development and state management.
-CSS Modules: Styled for responsiveness and visual appeal.
-Google Books API: Fetches book data dynamically.
-Git/GitHub: Version control for collaboration.
+- Next.js: React framework for routing and server-side rendering.
+- React: Component development and state management.
+- CSS Modules: Styled for responsiveness and visual appeal.
+- Google Books API: Fetches book data dynamically.
+- Git/GitHub: Version control for collaboration.
 
 🚀 Getting Started
 To run the project locally, follow these steps:
@@ -74,10 +74,10 @@ Understood the importance of optimization for smooth performance.
 
 🌟 Future Scope
 
-🔐 Add user authentication for personalized experiences.
-📚 Enable book borrowing/reservation functionality.
-💬 Incorporate user reviews and ratings.
-📈 Expand the book catalog with more APIs.
+- 🔐 Add user authentication for personalized experiences.
+- 📚 Enable book borrowing/reservation functionality.
+- 💬 Incorporate user reviews and ratings.
+- 📈 Expand the book catalog with more APIs.
 
 🤝 Contributing
 Contributions are welcome! Please fork the repository, create a branch, and submit a pullján request. For major changes, open an issue to discuss first.
