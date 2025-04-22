@@ -40,10 +40,11 @@ Open http://localhost:3000 in your browser to explore the app!
 
 🛠️ Development Phases
 The project was built in three phases:
+
 Phase 1: Foundation
 
 - Set up project structure and core components (Navbar, BookList, BookItem).
-I- mplemented basic navigation and state management.
+- mplemented basic navigation and state management.
 - Challenge: Struggled with Next.js routing.
 - Solution: Used next/link after studying tutorials.
 
