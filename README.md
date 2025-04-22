@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Online Library Application
+A web-based platform built with Next.js to browse and explore books online. Users can view featured books, check book details, and search for titles, making it easy to access a digital library from anywhere.
+Features
 
-## Getting Started
+Browse featured books on the homepage
+View detailed book information (title, author, cover, description)
+Search for books using keywords
+Responsive design for desktop and mobile
+Modular components for scalability
 
-First, run the development server:
+Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js: React framework for routing and rendering
+React: Component development and state management
+CSS Modules: Responsive styling
+Google Books API: Fetches book data
+Git/GitHub: Version control
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Setup Instructions
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Clone the repository:git clone https://github.com/your-username/online-library-application.git
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+Navigate to the project directory:cd online-library-application
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Install dependencies:npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Create a .env.local file and add your Google Books API key:GOOGLE_BOOKS_API_KEY=your-api-key
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run the development server:npm run dev
+
+
+Open http://localhost:3000 in your browser.
+
+Project Structure
+
+Phase 1: FoundationSet up project structure, built core components (Navbar, BookList, BookItem), and implemented basic navigation.
+Phase 2: Intermediate Functionality and StylingAdded routing for homepage, book details, and search pages, refactored components, and applied responsive styling.
+
+Challenges Overcome
+
+Fixed Next.js routing issues by using next/link for client-side navigation.
+Resolved mobile styling inconsistencies with media queries and browser dev tools.
+
+Future Scope
+
+Add user authentication for personalized features
+Implement book borrowing/reservation system
+Enable user reviews and ratings
+Optimize performance with lazy loading and caching
+
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request with your ideas or improvements.
+License
+This project is licensed under the MIT License.
