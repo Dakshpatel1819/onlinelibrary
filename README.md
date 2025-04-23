@@ -45,7 +45,7 @@ Welcome to Phase 2 Intermediate Functionality & Styling of the Online Library
 🔧Getting Started
 
 1. Clone the repository:
- git clone https://github.com/yourusername/online-library-app-phase2.git
+ git clone https://github.com/Dakshpatel1819/onlinelibrary-phase2.git
  cd online-library-app-phase2
 
 2. Install dependencies:
