@@ -80,7 +80,6 @@ online-book-library/
     
     ```
     
-    - Replace `your-username` with your GitHub username.
     - Use a GitHub Personal Access Token or SSH key for private repo access.
 2. **Install Dependencies**:
     
