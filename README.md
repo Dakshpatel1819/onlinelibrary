@@ -163,7 +163,4 @@ online-book-library/
 - Built with **Next.js** and **Gutendex API**.
 - Special thanks to **Grok** (created by xAI) for help with debugging and GitHub setup.
 
-> Happy reading and coding! 📚
-> 
 
----
