@@ -48,7 +48,7 @@ book discovery app.
 
 🔧 Getting Started
  1. Clone the repository:
- git clone https://github.com/yourusername/online-library-app-phase1.git
+ git clone https://github.com/Dakshpatel1819/onlinelibrary-phase1.git
  cd online-library-app-phase1
 
  2. Install dependencies:
